@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fade In</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeOut">Fade Out</button>
+    <br>
+    <br>
+    <img src="../image/%EB%A0%88%EB%93%9C%EB%B2%A8%EB%B2%B3.jpg" id="red" width="70%" height="70%" style="display: none; position: relative">
+    <script>
+        $(document).ready(function() {
+            $('#fadeIn').click(function() {
+                $('#red').fadeIn(1500);
+            });
+            $('#fadeOut').click(function() {
+                $('#red').fadeOut(1500);
+            });
+        });
+    </script>
+</body></html>

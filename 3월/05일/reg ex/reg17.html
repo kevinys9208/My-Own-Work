@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg17</title>
+    <script>
+        function regEX() {
+            var re = /r.*A/ig;
+            var str = 'One ring to bring them all and in the darkness bind them';
+            var newstr = str.match(re);
+
+            alert(newstr);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="regEX();">Click</button>
+</body></html>

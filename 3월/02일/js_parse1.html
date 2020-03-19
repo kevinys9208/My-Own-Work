@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Elemenet</title>
+    <script>
+        function calc() {
+            alert("민규가 깨워서 짜증나");
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var sum;
+            sum = parseInt(x) + parseInt(y);
+            document.getElementById("sum").value = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>덧셈 계산기</h3>
+    <form action="">
+        정수1 : <input type="text" id="x" /><br>
+        정수2 : <input type="text" id="y" /><br>
+        합계 : <input type="text" id="sum" /><br>
+        <input type="button" value="계산" onclick="calc();" /><br>
+
+    </form>
+</body></html>

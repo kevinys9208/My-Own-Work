@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Css</title>
+    <style>
+        div {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        var objwidth;
+        $(document).ready(function() {
+            
+            objwidth = $(document).width();
+            
+            $('#btn01').click(function() {
+                var color = $('#div01').css('background-color');
+                var style = $('#div01').attr('style');
+                $('#result01').text(color);
+                $('#result02').text(style);
+            });
+            $('#btn02').click(function() {
+                var color = $('#div01').css('background-color', '#999');
+                var style = $('#div01').attr('style');
+                $('#result01').text(Object.values(color));
+                $('#result02').text(style);
+            });
+            $('#btn03').click(function() {
+                var wid = $('#div01').width();
+                var style = $('#div01').attr('style');
+                $('#result01').text(wid);
+                $('#result02').text(objwidth);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div01" style="background-color: skyblue"></div>
+    <br>
+    <button id="btn01">css(element)</button>
+    <button id="btn02">css(element, style)</button>
+    <button id="btn03">width</button>
+    <br>
+    <p id="result01">결과표시</p>
+    <p id="result02">결과표시</p>
+</body></html>

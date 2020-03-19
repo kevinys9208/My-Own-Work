@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg13</title>
+    <script>
+        function regEX() {
+            var re = /[^ ]+/ig;
+            var str = '-@@@- * ** - - "*" -- * ** -@@@-';
+            var newstr = str.match(re);
+
+            alert(newstr);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="regEX();">Click</button>
+</body></html>

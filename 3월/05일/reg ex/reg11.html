@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg11</title>
+    <script>
+        function regEX() {
+            var re = /a+b/ig;
+            var str = "aabc abc bc";
+            var newstr = str.match(re);
+
+            alert(newstr);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="regEX();">Click</button>
+</body></html>

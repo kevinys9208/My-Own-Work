@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Class</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#btn01').click(function() {
+                $('#div01').addClass('warning');
+            });
+            $('#btn02').click(function() {
+                $('#div01').removeClass('warning');
+            });
+        });
+    </script>
+    <style>
+        .warning {
+            width: 100px;
+            border: 1px solid black;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div01">
+        <p>예제단락</p>
+    </div>
+    <button id="btn01">Add Class</button>
+    <button id="btn02">Remove Class</button>
+</body></html>

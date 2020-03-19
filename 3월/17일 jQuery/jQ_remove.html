@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Empty</title>
+    <style>
+        p#hello {
+            background-color: bisque;
+            width: auto;
+        }
+
+        p#goodbye {
+            background-color: azure;
+            width: auto;
+        }
+
+        .container {
+            height: 100px;
+            width: 300px;
+            border: 1px dotted black;
+        }
+    </style>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#btn01').click(function() {
+                $('.container').remove();
+            });
+            $('#btn02').click(function() {
+                $('.container').empty();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="btn01">Remove</button>
+    <button id="btn02">Empty</button>
+    <br>
+    <br>
+    <div class="container">
+        <p id="hello">I want to say to you hi?</p>
+        <p id="goodbye">I do not want to say to you goodbye...</p>
+    </div>
+</body></html>

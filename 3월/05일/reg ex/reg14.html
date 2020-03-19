@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg14</title>
+    <script>
+        function regEX() {
+            var re = /-X?XX?X/ig;
+            var str = '--XX-@-XX-@@-XX-@@@-XX-@@@@-XX-@@-@@-';
+            var newstr = str.match(re);
+
+            alert(newstr);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="regEX();">Click</button>
+</body></html>

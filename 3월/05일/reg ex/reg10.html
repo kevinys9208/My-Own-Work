@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg10</title>
+    <script>
+        function regEX() {
+            var re = /..(id|esd|nd)ay/ig;
+            var str = "Monday Tuesday Friday";
+            var newstr = str.match(re);
+
+            alert(newstr);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="regEX();">Click</button>
+</body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>value empty</title>
+    <script>
+        function checknotempty(field){
+            if(field.value.length == 0){
+                alert('아이디 입력필요');
+                field.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    이름 : <input type="text" id="user" />
+    <input type="button"
+    onclick="checknotempty(document.getElementById('user'))" value="확인">
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Hide</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <button>Show It!</button>
+    <br>
+    <br>
+    <img src="../image/%EB%A0%88%EB%93%9C%EB%B2%A8%EB%B2%B3.jpg" alt="red velvet" style="display: none">
+    <script>
+        //        show, hide, toggle
+        $(document).ready(function() {
+            $('button').click(function() {
+                $('img').toggle('1500');
+            });
+        });
+    </script>
+</body></html>

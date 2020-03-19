@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaining</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <button id="chain">메소드 체인</button>
+    <br>
+    <br>
+    <img src="../image/%EC%9B%AC%EB%94%94_Nylon02.jpg" id="wendy" style="display: none; position: relative">
+    <script>
+        $(document).ready(function() {
+            $('#chain').click(function() {
+                $('#wendy').show(3000).animate({
+                    left: '500px'
+                },1500).fadeOut(3000).slideDown(3000).slideUp(3000);
+            });
+        });
+    </script>
+</body></html>

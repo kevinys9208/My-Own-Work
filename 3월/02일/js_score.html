@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grade</title>
+    <script>
+        var input;
+        var score;
+        var msg;
+        var a;
+
+        function grade() {
+            input = prompt("Please input your Score.", "Score");
+            score = parseInt(input);
+
+            switch (true) {
+                case score < 40:
+                    msg = "Grade: D";
+                    a = "Your Grade is D";
+                    break;
+                case score < 60:
+                    msg = "Grade: C";
+                     a = "Your Grade is C";
+                    break;
+                case score < 80:
+                    msg = "Grade: B";
+                     a = "Your Grade is B";
+                    break;
+                case score <= 100:    
+                    msg = "Grade: A";
+                     a = "Your Grade is A";
+                    break;
+                default:
+                    msg = "Wrong Score";
+                     a = "You have to input the right Score";
+                    break;
+            }
+
+            alert(msg);
+            
+            document.getElementById("result").innerHTML = a;
+            
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="grade();">Press to Get Your Grade!</button>
+    <br>
+    <h1 id="result"></h1>
+</body></html>

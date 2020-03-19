@@ -1,0 +1,75 @@
+#sub_img {
+    width: 971px;
+    height: 179px;
+    background-image: url(../images/company/sub_back_1.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#sub_menu {
+    width: 238px;
+    float: left;
+    margin: 20px;
+    /*    border: 1px solid black;*/
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+}
+
+#sub_menu ul {
+    margin: 20px 0 0 10px;
+    list-style: none;
+}
+
+#sub_menu a {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    height: 15px;
+    width: 150px;
+    padding: 7px;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #999;
+    background-image: url(../images/bullet.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+article {
+    float: right;
+    width: 680px;
+    margin-right: 10px;
+}
+
+article h1 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 45px;
+    color: #333;
+    margin: 20px 0;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+article p {
+    padding-left: 10px;
+}
+
+figure.ceo {
+    float: right;
+    margin: 10px;
+}
+
+figcaption {
+    text-align: center;
+    color: burlywood
+}
+
+article .y2011 h3,
+article .y2010 h3,
+article .y2009 h3 {
+    display: none;
+}
+
+article .y2011{
+    background-image: url(../images/company/2011.jpg);
+}

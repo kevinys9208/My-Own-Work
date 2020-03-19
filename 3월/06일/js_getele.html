@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Element</title>
+</head>
+<body>
+   <script>
+        function process() {
+            obj = document.getElementById('target');
+            alert(obj.value);
+        }
+    </script>
+    <form action="#" name="myForm">
+        <input type="text" id="target" name="text1"/>
+        <input type="submit" value="제출" onclick="process();">
+    </form>
+</body>
+</html>

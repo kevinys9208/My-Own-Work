@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Func2</title>
+</head>
+    <script>
+         function divide(a, b) {
+            if (b == 0) {
+                return "입력값이 잘못되었습니다.";
+            } else {
+                return a / b;
+            }
+        }
+    </script>
+<body>
+     <script>
+        var input;
+        var one;
+        var two;
+
+        input = prompt("A/B : A를 입력하세요", "A");
+        one = parseInt(input);
+        input = prompt("A/B : B를 입력하세요", "B");
+        two = parseInt(input);
+
+        document.write(divide(one, two));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Element Mode2</title>
+</head>
+
+<body>
+    <img id="image" src="../../image/button_blue_rec.png" alt="b_button">
+    <script>
+        i = 0;
+
+        function changeImage() {
+            if (i == 0) {
+                document.getElementById('image').src = "../../image/button_black_rec.png"
+                i = 1;
+            } else {
+                document.getElementById('image').src = "../../image/button_blue_rec.png"
+                i = 0;
+            }
+        }
+    </script>
+    <input type="button" onclick="changeImage();" value="changeImage">
+</body></html>

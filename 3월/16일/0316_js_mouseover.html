@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mouseover</title>
+</head>
+<body>
+  <script>
+    function OnMouseIn(elem){
+        elem.style.border="2px solid red";
+    }
+    function OnMouseOut(elem){
+        elem.style.border="";
+    }
+      
+    
+    
+    </script>
+  
+   <div style="background-color: yellow; width: 200px" onmouseover="OnMouseIn(this)"
+       onmouseout="OnMouseOut(this)"
+   >마우스를 이동해 보세요</div>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>value empty</title>
+</head>
+<body>
+  <script>
+    function checkNotEmpty(field){
+        if(field.value.length==0){
+            alert("아이디 입력필요");
+            field.focus();
+            return false;
+        }
+        return true;
+            
+    }
+    
+    </script>
+   이름 : <input type="text" id="user" />
+   <input type="button"
+   onclick="checkNotEmpty(document.getElementById('user'))" value="확인" />
+    
+</body>
+</html>

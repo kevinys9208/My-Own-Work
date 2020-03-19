@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date3</title>
+</head>
+
+<body>
+    <div id="remain"></div>
+    <script>
+        function newYear() {
+            var now = new Date();
+            var nYear = new Date("January 1," + (now.getFullYear() + 1));
+            var diff = nYear - now;
+            var milliseconds = Math.floor((diff % 1000) / 10);
+            diff = diff / 1000;
+            var seconds = Math.floor(diff % 60);
+            diff = diff / 60;
+            var minutes = Math.floor(diff % 60);
+            diff = diff / 60;
+            var hour = Math.floor(diff % 24);
+            diff = diff / 24;
+
+            var outstr = '내년도 신정까지 ' + Math.ceil(diff) + '일 ' + hour + '시간 ' + minutes + '분 ' + seconds + '.' + milliseconds + '초 남음';
+
+            //            alert(outstr);
+
+            document.getElementById("remain").innerHTML = outstr;
+
+            setTimeout("newYear()", 10);
+        }
+
+        newYear();
+    </script>
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Element Mode3</title>
+</head>
+
+<body>
+    <p id="p1">This is a param.</p>
+    <script>
+        function changeStyle() {
+            document.getElementById('p1').style.color = 'red';
+            document.getElementById('p1').style.fontFamily = 'impact';
+            document.getElementById('p1').style.fontStyle = 'italic';
+        }
+        
+        function changeHidden() {
+            document.getElementById('p1').style.visibility = 'hidden';
+        }
+    </script>
+
+    <input type="button" value="click" onclick="changeStyle();">
+    <input type="button" value="clk_hidden" onclick="changeHidden();">
+</body></html>

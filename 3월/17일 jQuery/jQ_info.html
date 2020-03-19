@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Information</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        div {
+            width: 500px;
+            height: 500px;
+            background-color: azure;
+            border: 1px solid azure;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="log">
+        <script>
+            $(document).ready(function() {
+                $('#log').mousemove(function(e) {
+                    $('#log').text('pageX : ' + e.pageX + ', pageY : ' + e.pageY);
+                });
+            });
+        </script>
+    </div>
+
+</body></html>

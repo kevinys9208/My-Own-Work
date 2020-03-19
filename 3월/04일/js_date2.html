@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date2</title>
+    <script>
+        function checkdate() {
+            var s = document.getElementById("pdate").value;           
+//            alert(s);
+            
+            var pdate = new Date(s);
+            var today = new Date();
+            
+            var diff = today.getTime() - pdate.getTime();
+//            alert(diff);
+            
+            var days = Math.floor(diff/(1000*60*60*24));
+            if (days>30) {
+                alert("반품 기간이 지났습니다");
+            } else {
+                alert("반품 가능 기간 입니다.")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    구입날짜 :
+    <input type="date" id="pdate" /> <br>
+    <button onclick="checkdate();"> 검사 </button>
+</body>
+</html>

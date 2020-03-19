@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg04</title>
+    <script>
+        function regEX(){
+            var re = /\\/ig;
+            var str = "$12$ \-\ $25$";
+            var newstr = str.match(re);
+            
+            alert(newstr);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="regEX();">Click</button>
+</body>
+</html>

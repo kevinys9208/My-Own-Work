@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fade In</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <button id="slideDown">Slide Down</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="slideToggle">Slide Toggle</button>
+    <br>
+    <br>
+    <img src="../image/%EC%9B%AC%EB%94%94_Nylon01.jpg" id="wendy" style="position: relative">
+    <script>
+        $(document).ready(function() {
+            $('#slideDown').click(function() {
+                $('#wendy').slideDown(3000);
+            });
+            $('#slideUp').click(function() {
+                $('#wendy').slideUp(3000);
+            });
+            $('#slideToggle').click(function() {
+                $('#wendy').slideToggle(3000);
+            });
+        });
+    </script>
+</body></html>

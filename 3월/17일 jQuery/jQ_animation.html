@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <button>Animation</button>
+    <br>
+    <img src="../image/%EB%A0%88%EB%93%9C%EB%B2%A8%EB%B2%B3.jpg" id="red" width="50%" height="50%" style="position: relative" />
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                $('img').animate({
+                    left: '100px',
+                    opacity: '0',
+                    width: '70%',
+                    height: '70%'
+                }, 1500,'swing');
+            });
+        });
+    </script>
+</body></html>

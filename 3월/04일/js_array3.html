@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>연관배열 활용</title>
+    <script>
+//        name 속성을 이용해 키값으로 사용할 수 있다.
+        var i;
+
+        function init() {
+            for (i = 0; i < 3; i++) {
+                document.myForm["a" + i].value = i;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" name="myForm">
+        필드1 <input type="text" name="a0" /> <br>
+        필드2 <input type="text" name="a1" /> <br>
+        필드3 <input type="text" name="a2" /> <br>
+        <input type="button" value="초기화" onclick="init();">
+    </form>
+</body></html>

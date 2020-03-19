@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Mouse Event</title>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        div.out{
+        width: 200px;
+        height: 60px;
+        background-color: yellow;
+        }
+    </style>
+    <script>
+//        마우스이벤트 종류
+//        mouseover, mouseenter, mouseleave, mouseup, mousedown 등
+        
+        var i = 0;
+        $(document).ready(function(){
+              $('div.out').mousedown(function(){
+                $("p:last", this).text(++i);
+            });
+            
+            $('div.out').mouseup(function(){
+                $("p:last", this).text(--i);
+            });
+        });
+    </script>
+    <div class="out">
+        <p>마우스를 움직이세요</p>
+        <p>0</p>
+    </div>
+</body></html>
